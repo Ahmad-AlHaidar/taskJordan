@@ -5,7 +5,7 @@ enum BlocStatus { init, loading, loaded, error, empty }
 @immutable
 class CategoryState {
   final BlocStatus getCategory;
-  final List<CategoryModel> categoriesList;
+  final List<CategoryEntity> categoriesList;
 
   const CategoryState({
     this.getCategory = BlocStatus.init,
@@ -14,7 +14,7 @@ class CategoryState {
 
   CategoryState copyWith({
     BlocStatus? getCategory,
-    List<CategoryModel>? categoriesList,
+    List<CategoryEntity>? categoriesList,
   }) {
     return CategoryState(
       getCategory: getCategory ?? this.getCategory,

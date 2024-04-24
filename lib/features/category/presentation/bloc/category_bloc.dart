@@ -6,6 +6,7 @@ import 'package:meta/meta.dart';
 import 'package:task/features/common/usecase.dart';
 
 import '../../data/models/category_model.dart';
+import '../../domain/entity/category_entity.dart';
 import '../../domain/use_case/get_category_use_case.dart';
 
 part 'category_event.dart';

@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:injectable/injectable.dart';
 import 'package:task/features/category/data/models/category_model.dart';
 import 'package:task/features/category/data/models/resturant_model.dart';
-import 'package:task/features/category/data/models/sub_category_model.dart';
 
 import '../../../../generated/assets.gen.dart';
 import '../../../common/api_utils.dart';

@@ -1,5 +1,6 @@
 import 'package:either_dart/either.dart';
 import 'package:injectable/injectable.dart';
+import 'package:task/features/category/domain/entity/category_entity.dart';
 
 import '../../../common/api_utils.dart';
 import '../../../common/app_exception.dart';
@@ -14,7 +15,7 @@ class CategoryRepositoryImp implements CategoryRepository {
   CategoryRepositoryImp({required this.authRemoteDataSource});
 
   @override
-  FutureResult<List<CategoryModel>> getCategory()  {
+  FutureResult<List<CategoryEntity>> getCategory()  {
     return toApiResult(() async => await authRemoteDataSource.getCategory());
     // return Right(await authRemoteDataSource.firstStepRe(params));
   }

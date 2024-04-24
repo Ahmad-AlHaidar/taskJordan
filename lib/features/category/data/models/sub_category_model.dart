@@ -1,10 +1,9 @@
-class SubCategoryModel{
-  final String name;
-  final String imagePath;
+import '../../domain/entity/sub_category_entity.dart';
 
+class SubCategoryModel extends SubCategoryEntity {
   const SubCategoryModel({
-    required this.name,
-    required this.imagePath,
+    required super.name,
+    required super.imagePath,
   });
 
   @override

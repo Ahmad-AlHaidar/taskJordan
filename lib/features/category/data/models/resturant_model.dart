@@ -1,12 +1,11 @@
-class ResturantModel{
-  final String imagePath;
-  final String logo;
-  final String name;
+import '../../domain/entity/resturant_entity.dart';
+
+class ResturantModel extends ResturantEntity {
 
   const ResturantModel({
-    required this.imagePath,
-    required this.logo,
-    required this.name,
+    required super.imagePath,
+    required super.logo,
+    required super.name,
   });
 
   @override

@@ -1,22 +1,16 @@
 import 'package:task/features/category/data/models/resturant_model.dart';
 import 'package:task/features/category/data/models/sub_category_model.dart';
 
-class CategoryModel {
-  final String name;
-  final String imagePath;
-  final int numberOf;
-  final List<SubCategoryModel> subCategories;
+import '../../domain/entity/category_entity.dart';
 
-  final List<ResturantModel> resturant;
-  final bool isPopular;
-
+class CategoryModel extends CategoryEntity {
   const CategoryModel({
-    required this.name,
-    required this.imagePath,
-    required this.numberOf,
-    required this.subCategories,
-    required this.resturant,
-    this.isPopular = false,
+    required super.name,
+    required super.imagePath,
+    required super.numberOf,
+    required super.subCategories,
+    required super.resturant,
+    super.isPopular = false,
   });
 
   @override
